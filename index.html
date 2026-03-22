@@ -330,6 +330,66 @@ body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;min
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 ::-webkit-scrollbar{width:4px;}
 ::-webkit-scrollbar-thumb{background:var(--bdr);border-radius:2px;}
+
+/* ── HEVY TAB ─────────────────────────────────────────────────── */
+.nb.hevy-on{background:#222222;color:#FFFFFF;font-weight:600;border-left:2px solid #FFFFFF;}
+.hevy-setup{background:var(--card);border:1px solid var(--bdr);border-radius:12px;padding:28px 24px;margin-bottom:20px;text-align:center;}
+.hevy-setup-icon{font-size:40px;margin-bottom:12px;}
+.hevy-setup-title{font-size:18px;font-weight:700;margin-bottom:8px;}
+.hevy-setup-sub{font-family:"DM Mono",monospace;font-size:11px;color:#666666;line-height:1.7;margin-bottom:20px;}
+.hevy-key-row{display:flex;gap:8px;max-width:480px;margin:0 auto;}
+.hevy-key-in{flex:1;background:var(--card2);border:1px solid var(--bdr);border-radius:7px;padding:9px 12px;color:var(--text);font-family:"DM Mono",monospace;font-size:12px;outline:none;}
+.hevy-key-in:focus{border-color:#FFFFFF;}
+.hevy-connect-btn{background:#FFFFFF;color:#080808;font-family:"DM Sans",sans-serif;font-weight:700;font-size:12px;padding:9px 18px;border:none;border-radius:7px;cursor:pointer;white-space:nowrap;}
+.hevy-connect-btn:hover{opacity:.88;}
+.hevy-connect-btn:disabled{opacity:.4;cursor:not-allowed;}
+.hevy-error{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:10px 14px;font-family:"DM Mono",monospace;font-size:11px;color:#AAAAAA;margin-bottom:16px;line-height:1.6;}
+.hevy-loading{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 0;gap:14px;color:#666666;}
+.hevy-spinner{width:32px;height:32px;border:2px solid #2A2A2A;border-top-color:#FFFFFF;border-radius:50%;animation:spin .8s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hevy-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;}
+.hevy-stat-card{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:16px 18px;}
+.hsc-val{font-family:"Bebas Neue",sans-serif;font-size:36px;line-height:1;color:#FFFFFF;}
+.hsc-lbl{font-size:10px;color:#666666;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;}
+.hsc-sub{font-family:"DM Mono",monospace;font-size:10px;color:#444444;margin-top:4px;}
+.hevy-section{background:var(--card);border:1px solid var(--bdr);border-radius:12px;margin-bottom:16px;overflow:hidden;}
+.hevy-sec-hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--bdr);}
+.hevy-sec-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#888888;}
+.hevy-sec-ct{font-family:"DM Mono",monospace;font-size:10px;color:#444444;}
+.hevy-workout-row{display:flex;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid rgba(42,42,42,.6);}
+.hevy-workout-row:last-child{border-bottom:none;}
+.hwr-date{font-family:"DM Mono",monospace;font-size:10px;color:#555555;min-width:72px;}
+.hwr-name{font-size:13px;font-weight:600;flex:1;}
+.hwr-exs{font-size:11px;color:#555555;margin-top:1px;}
+.hwr-dur{font-family:"DM Mono",monospace;font-size:11px;color:#444444;text-align:right;}
+.hwr-sets{font-family:"Bebas Neue",sans-serif;font-size:18px;color:#FFFFFF;text-align:right;}
+.hwr-sets-lbl{font-size:9px;color:#555555;text-transform:uppercase;letter-spacing:1px;}
+.pr-table{width:100%;border-collapse:collapse;}
+.pr-table th{font-family:"DM Mono",monospace;font-size:9px;text-transform:uppercase;letter-spacing:1.5px;color:#555555;text-align:left;padding:9px 18px 7px;border-bottom:1px solid var(--bdr);}
+.pr-table th.r{text-align:right;}
+.pr-table td{font-size:12px;padding:9px 18px;border-bottom:1px solid rgba(42,42,42,.5);}
+.pr-table tr:last-child td{border-bottom:none;}
+.pr-table td.r{text-align:right;font-family:"DM Mono",monospace;font-size:11px;color:#888888;}
+.pr-table td.b{font-weight:600;}
+.pr-best{font-family:"Bebas Neue",sans-serif;font-size:16px;color:#FFFFFF;}
+.vol-chart{padding:16px 18px 10px;}
+.vol-bars{display:flex;align-items:flex-end;gap:5px;height:100px;margin-bottom:6px;}
+.vol-bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;}
+.vol-bar{width:100%;background:#2A2A2A;border-radius:3px 3px 0 0;transition:height .4s ease;min-height:3px;position:relative;}
+.vol-bar-fill{position:absolute;bottom:0;left:0;right:0;background:#FFFFFF;border-radius:3px 3px 0 0;transition:height .5s ease;}
+.vol-bar-lbl{font-family:"DM Mono",monospace;font-size:8px;color:#444444;text-align:center;}
+.vol-bar-val{font-family:"DM Mono",monospace;font-size:8px;color:#666666;text-align:center;}
+.freq-row{display:flex;gap:5px;padding:16px 18px;flex-wrap:wrap;}
+.freq-day{width:28px;height:28px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:"DM Mono",monospace;font-size:9px;color:#444444;background:#1A1A1A;border:1px solid #2A2A2A;}
+.freq-day.worked{background:#2A2A2A;border-color:#555555;color:#DDDDDD;}
+.freq-day.today{border-color:#FFFFFF;color:#FFFFFF;}
+.hevy-key-display{display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:8px;padding:10px 14px;margin-bottom:16px;}
+.hevy-key-display span{font-family:"DM Mono",monospace;font-size:11px;color:#555555;flex:1;}
+.hevy-disconnect{background:transparent;border:1px solid #2A2A2A;color:#555555;font-family:"DM Sans",sans-serif;font-size:11px;padding:4px 10px;border-radius:5px;cursor:pointer;}
+.hevy-disconnect:hover{border-color:#FFFFFF;color:#FFFFFF;}
+.hevy-refresh{background:transparent;border:1px solid #2A2A2A;color:#888888;font-family:"DM Sans",sans-serif;font-size:11px;padding:5px 12px;border-radius:5px;cursor:pointer;margin-left:auto;}
+.hevy-refresh:hover{border-color:#FFFFFF;color:#FFFFFF;}
+
 </style>
 </head>
 <body>
@@ -392,7 +452,7 @@ body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;min
 <script>
 
 // ── CONFIG ──────────────────────────────────────────────────────
-var CFG_DEF={startDate:'2026-03-16',currentWeight:200,goalWeight:160,calories:2050,protein:140,carbs:195,fat:62,workoutTime:'7:00 AM',wakeTime:'6:00 AM',bedtime:'10:30 PM',suppReminders:true,name:'',dayTimes:{}};
+var CFG_DEF={startDate:'2026-03-16',currentWeight:200,goalWeight:160,calories:2050,protein:140,carbs:195,fat:62,workoutTime:'7:00 AM',wakeTime:'6:00 AM',bedtime:'10:30 PM',suppReminders:true,name:'',dayTimes:{},hevyKey:''};
 function loadCfg(){try{return Object.assign({},CFG_DEF,JSON.parse(localStorage.getItem('t26cfg')||'{}'));}catch(e){return Object.assign({},CFG_DEF);}}
 function saveCfg(c){localStorage.setItem('t26cfg',JSON.stringify(c));}
 var CFG=loadCfg();
@@ -1220,6 +1280,7 @@ function renderSidebar(){
   var h='<div class="sb-sec"><div class="sb-lbl">Navigation</div>';
   h+='<button class="nb food-'+(curTab==='food'?'on':'off nb')+'" data-act="tab" data-tab="food">&#x1F957; Food Suggestions</button>';
   h+='<button class="nb run-'+(curTab==='run'?'on':'off nb')+'" data-act="tab" data-tab="run">&#x1F3C3; Running Schedule</button>';
+  h+='<button class="nb hevy-'+(curTab==='hevy'?'on':'off nb')+'" data-act="tab" data-tab="hevy">&#x1F4AA; Hevy</button>';
   h+='<button class="nb sup-'+(curTab==='supp'?'on':'off nb')+'" data-act="tab" data-tab="supp">&#128138; Supplements</button>';
   h+='<button class="nb cfg-'+(curTab==='settings'?'on':'off nb')+'" data-act="tab" data-tab="settings">&#9881;&#65039; Settings</button>';
   h+='</div><div class="sb-sec"><div class="sb-lbl">Weeks</div>';
@@ -1261,6 +1322,7 @@ function render(){
   else if(curTab==='run')content=renderRunPage();
   else if(curTab==='supp')content=renderSupPage();
   else if(curTab==='settings')content=renderSettings();
+  else if(curTab==='hevy')content=renderHevyPage();
   document.getElementById('main-wrap').innerHTML=content;
 }
 
@@ -1391,6 +1453,21 @@ document.addEventListener('click',function(e){
     var msg2=document.getElementById('shift-msg');
     if(msg2){msg2.textContent='Shifted '+DOW_NAMES[fromDow]+' \u2194 '+DOW_NAMES[toDow]+' ('+count+' week'+(count>1?'s':'')+')';msg2.classList.add('show');setTimeout(function(){msg2.classList.remove('show');},3000);}
   }
+  else if(a==='hevyconnect'){
+    var inp=document.getElementById('hevy-key-input');
+    if(inp&&inp.value.trim()){
+      CFG.hevyKey=inp.value.trim();
+      saveCfg(CFG);
+      hevyData=null;
+      loadHevyData();
+    }
+  }
+  else if(a==='hevydisconnect'){
+    CFG.hevyKey='';saveCfg(CFG);hevyData=null;hevyError='';render();
+  }
+  else if(a==='hevyrefresh'){
+    hevyData=null;loadHevyData();
+  }
   else if(a==='savesettings'){
     var v;
     v=document.getElementById('s-sd');if(v)CFG.startDate=v.value||'2026-03-16';
@@ -1430,6 +1507,272 @@ document.getElementById('btn-today').addEventListener('click',function(){
   },100);
 });
 
+
+// ── HEVY INTEGRATION ────────────────────────────────────────────
+var hevyData = null;      // null=not loaded, false=error, {}=loaded
+var hevyLoading = false;
+var hevyError = '';
+
+function hevyHeaders(){
+  return {'api-key': CFG.hevyKey, 'Content-Type':'application/json'};
+}
+
+async function fetchHevy(path){
+  var url = 'https://api.hevyapp.com/v1' + path;
+  var resp = await fetch(url, {headers: hevyHeaders()});
+  if(!resp.ok) throw new Error('HTTP ' + resp.status + (resp.status===401?' — Invalid API key':''));
+  return resp.json();
+}
+
+async function loadHevyData(){
+  if(!CFG.hevyKey){return;}
+  hevyLoading = true;
+  hevyError = '';
+  render();
+  try {
+    // Fetch last 5 pages of workouts (50 workouts) for PRs + volume
+    var pages = [];
+    for(var p = 1; p <= 5; p++){
+      try {
+        var pg = await fetchHevy('/workouts?page=' + p + '&pageSize=10');
+        pages.push(pg);
+        if(p >= pg.page_count) break;
+      } catch(e){ break; }
+    }
+    var allWorkouts = [];
+    pages.forEach(function(pg){ allWorkouts = allWorkouts.concat(pg.workouts||[]); });
+
+    // Sort newest first
+    allWorkouts.sort(function(a,b){ return new Date(b.start_time)-new Date(a.start_time); });
+
+    // Compute PRs (best 1-rep-equivalent = weight * (1 + reps/30))
+    var prs = {};
+    allWorkouts.forEach(function(wo){
+      (wo.exercises||[]).forEach(function(ex){
+        (ex.sets||[]).forEach(function(s){
+          if(!s.weight_kg || !s.reps) return;
+          var e1rm = s.weight_kg * (1 + s.reps / 30);
+          var lbs = Math.round(s.weight_kg * 2.20462);
+          if(!prs[ex.title] || e1rm > prs[ex.title].e1rm){
+            prs[ex.title] = {weight_lbs: lbs, reps: s.reps, e1rm: e1rm};
+          }
+        });
+      });
+    });
+
+    // Volume per workout (last 10)
+    var volData = allWorkouts.slice(0,10).map(function(wo){
+      var vol = 0;
+      (wo.exercises||[]).forEach(function(ex){
+        (ex.sets||[]).forEach(function(s){
+          if(s.weight_kg && s.reps) vol += s.weight_kg * s.reps;
+        });
+      });
+      var d = new Date(wo.start_time);
+      var mon=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      return {
+        label: mon[d.getMonth()]+' '+d.getDate(),
+        vol: Math.round(vol * 2.20462), // convert to lbs
+        title: wo.title || 'Workout'
+      };
+    }).reverse();
+
+    // Workout frequency — last 60 days
+    var freqSet = {};
+    allWorkouts.forEach(function(wo){
+      freqSet[wo.start_time.split('T')[0]] = true;
+    });
+
+    // Streak calculation
+    var streak = 0;
+    var today = new Date(); today.setHours(0,0,0,0);
+    for(var i = 0; i < 60; i++){
+      var d = new Date(today); d.setDate(today.getDate()-i);
+      var ds = dk(d);
+      if(freqSet[ds]){ streak++; } else if(i > 0){ break; }
+    }
+
+    // Total sets this week
+    var weekStart = new Date(today); weekStart.setDate(today.getDate()-today.getDay());
+    var weekSets = 0;
+    allWorkouts.forEach(function(wo){
+      var d = new Date(wo.start_time); d.setHours(0,0,0,0);
+      if(d >= weekStart){
+        (wo.exercises||[]).forEach(function(ex){ weekSets += (ex.sets||[]).length; });
+      }
+    });
+
+    hevyData = {
+      workouts: allWorkouts.slice(0,10),
+      prs: prs,
+      volData: volData,
+      freqSet: freqSet,
+      streak: streak,
+      totalWorkouts: allWorkouts.length,
+      weekSets: weekSets
+    };
+    hevyLoading = false;
+    render();
+  } catch(err){
+    hevyError = err.message || 'Failed to connect to Hevy';
+    hevyLoading = false;
+    hevyData = false;
+    render();
+  }
+}
+
+function renderHevyPage(){
+  var h = '<div class="page">';
+  h += '<div class="pg-eye">Workout Tracker</div>';
+  h += '<div class="pg-h1" style="color:#FFFFFF">Hevy</div>';
+  h += '<div class="pg-sub">Real workout data from your Hevy account &mdash; PRs, volume, streaks</div>';
+
+  // API key not set — show setup
+  if(!CFG.hevyKey){
+    h += '<div class="hevy-setup">';
+    h += '<div class="hevy-setup-icon">&#x1F4AA;</div>';
+    h += '<div class="hevy-setup-title">Connect Your Hevy Account</div>';
+    h += '<div class="hevy-setup-sub">Paste your Hevy API key below to pull in your real workout data.<br>Find it in the Hevy app under <b style="color:#DDDDDD">Settings &rarr; API</b></div>';
+    h += '<div class="hevy-key-row">';
+    h += '<input class="hevy-key-in" id="hevy-key-input" type="text" placeholder="hevy_api_xxxxxxxxxxxxx" autocomplete="off">';
+    h += '<button class="hevy-connect-btn" data-act="hevyconnect">Connect</button>';
+    h += '</div></div>';
+    h += '<div class="info-box"><b>How to get your API key:</b> Open Hevy app &rarr; Profile &rarr; Settings &rarr; scroll to Developer &rarr; API Key. Copy and paste it above.</div>';
+    h += '</div>';
+    return h;
+  }
+
+  // Key set — show header with disconnect
+  h += '<div class="hevy-key-display">';
+  h += '<span>&#128273; Connected &mdash; ' + CFG.hevyKey.substring(0,12) + '&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span>';
+  h += '<button class="hevy-disconnect" data-act="hevydisconnect">Disconnect</button>';
+  h += '<button class="hevy-refresh" data-act="hevyrefresh">&#8635; Refresh</button>';
+  h += '</div>';
+
+  // Loading
+  if(hevyLoading){
+    h += '<div class="hevy-loading"><div class="hevy-spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:11px">Fetching workout data&hellip;</span></div>';
+    h += '</div>';
+    return h;
+  }
+
+  // Error
+  if(hevyData === false){
+    h += '<div class="hevy-error">&#9888; ' + escH(hevyError) + '<br><span style="color:#444">Check your API key is correct and try refreshing.</span></div>';
+    h += '</div>';
+    return h;
+  }
+
+  // Not yet loaded
+  if(hevyData === null){
+    h += '<div class="hevy-loading"><div class="hevy-spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:11px">Loading&hellip;</span></div>';
+    h += '</div>';
+    return h;
+  }
+
+  // ── DATA ──────────────────────────────────────────────────────
+  var d = hevyData;
+
+  // Stats grid
+  h += '<div class="hevy-grid">';
+  h += '<div class="hevy-stat-card"><div class="hsc-val">'+d.streak+'</div><div class="hsc-lbl">Day Streak</div><div class="hsc-sub">Consecutive workout days</div></div>';
+  h += '<div class="hevy-stat-card"><div class="hsc-val">'+d.weekSets+'</div><div class="hsc-lbl">Sets This Week</div><div class="hsc-sub">Total sets completed</div></div>';
+  h += '<div class="hevy-stat-card"><div class="hsc-val">'+d.totalWorkouts+'</div><div class="hsc-lbl">Workouts Loaded</div><div class="hsc-sub">From last 5 pages</div></div>';
+  h += '<div class="hevy-stat-card"><div class="hsc-val">'+Object.keys(d.prs).length+'</div><div class="hsc-lbl">Exercises Tracked</div><div class="hsc-sub">With PR data</div></div>';
+  h += '</div>';
+
+  // ── VOLUME CHART ─────────────────────────────────────────────
+  if(d.volData.length > 0){
+    var maxVol = Math.max.apply(null, d.volData.map(function(v){return v.vol;}));
+    h += '<div class="hevy-section">';
+    h += '<div class="hevy-sec-hdr"><div class="hevy-sec-title">&#128200; Volume Over Time</div><div class="hevy-sec-ct">lbs lifted per session</div></div>';
+    h += '<div class="vol-chart">';
+    h += '<div class="vol-bars">';
+    d.volData.forEach(function(v){
+      var pct = maxVol > 0 ? Math.round((v.vol/maxVol)*100) : 0;
+      h += '<div class="vol-bar-wrap">';
+      h += '<div class="vol-bar" style="height:100%"><div class="vol-bar-fill" style="height:'+pct+'%"></div></div>';
+      h += '<div class="vol-bar-lbl">'+v.label+'</div>';
+      h += '</div>';
+    });
+    h += '</div>';
+    // Vol totals row
+    h += '<div style="display:flex;gap:5px;margin-top:4px;">';
+    d.volData.forEach(function(v){
+      var k = v.vol >= 1000 ? (v.vol/1000).toFixed(1)+'k' : String(v.vol);
+      h += '<div class="vol-bar-val" style="flex:1">'+k+'</div>';
+    });
+    h += '</div></div></div>';
+  }
+
+  // ── RECENT WORKOUTS ───────────────────────────────────────────
+  if(d.workouts.length > 0){
+    h += '<div class="hevy-section">';
+    h += '<div class="hevy-sec-hdr"><div class="hevy-sec-title">&#x1F4CB; Recent Workouts</div><div class="hevy-sec-ct">last '+d.workouts.length+'</div></div>';
+    d.workouts.forEach(function(wo){
+      var start = new Date(wo.start_time);
+      var end = wo.end_time ? new Date(wo.end_time) : null;
+      var durMins = end ? Math.round((end-start)/60000) : 0;
+      var totalSets = 0;
+      (wo.exercises||[]).forEach(function(ex){ totalSets += (ex.sets||[]).length; });
+      var mon=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      var dateStr = mon[start.getMonth()]+' '+start.getDate()+', '+start.getFullYear();
+      var exNames = (wo.exercises||[]).slice(0,3).map(function(e){return e.title;}).join(' &middot; ');
+      if((wo.exercises||[]).length > 3) exNames += ' +' + ((wo.exercises||[]).length-3) + ' more';
+      h += '<div class="hevy-workout-row">';
+      h += '<div><div class="hwr-date">'+dateStr+'</div></div>';
+      h += '<div style="flex:1"><div class="hwr-name">'+escH(wo.title||'Workout')+'</div><div class="hwr-exs">'+exNames+'</div></div>';
+      h += '<div style="text-align:right">';
+      h += '<div class="hwr-sets">'+totalSets+'</div><div class="hwr-sets-lbl">sets</div>';
+      if(durMins) h += '<div class="hwr-dur">'+durMins+' min</div>';
+      h += '</div></div>';
+    });
+    h += '</div>';
+  }
+
+  // ── PRs ───────────────────────────────────────────────────────
+  var prKeys = Object.keys(d.prs);
+  if(prKeys.length > 0){
+    // Sort by e1rm desc
+    prKeys.sort(function(a,b){ return d.prs[b].e1rm - d.prs[a].e1rm; });
+    var topPRs = prKeys.slice(0, 20);
+    h += '<div class="hevy-section">';
+    h += '<div class="hevy-sec-hdr"><div class="hevy-sec-title">&#127941; Personal Records</div><div class="hevy-sec-ct">best weight x reps</div></div>';
+    h += '<table class="pr-table"><thead><tr><th>Exercise</th><th class="r">Best Weight</th><th class="r">Reps</th><th class="r">Est. 1RM</th></tr></thead><tbody>';
+    topPRs.forEach(function(name){
+      var pr = d.prs[name];
+      var e1rm_lbs = Math.round(pr.e1rm * 2.20462);
+      h += '<tr>';
+      h += '<td class="b">'+escH(name)+'</td>';
+      h += '<td class="r"><span class="pr-best">'+pr.weight_lbs+'</span> <span style="font-size:9px;color:#444">lbs</span></td>';
+      h += '<td class="r">'+pr.reps+'</td>';
+      h += '<td class="r">~'+e1rm_lbs+' lbs</td>';
+      h += '</tr>';
+    });
+    h += '</tbody></table></div>';
+  }
+
+  // ── FREQUENCY HEATMAP (last 60 days) ─────────────────────────
+  h += '<div class="hevy-section">';
+  h += '<div class="hevy-sec-hdr"><div class="hevy-sec-title">&#128197; Workout Frequency</div><div class="hevy-sec-ct">last 60 days</div></div>';
+  h += '<div class="freq-row">';
+  var todayD = new Date(); todayD.setHours(0,0,0,0);
+  var DNAMES_SH = ['S','M','T','W','T','F','S'];
+  for(var i=59; i>=0; i--){
+    var dd = new Date(todayD); dd.setDate(todayD.getDate()-i);
+    var dds = dk(dd);
+    var worked = !!d.freqSet[dds];
+    var isToday = (i===0);
+    h += '<div class="freq-day'+(worked?' worked':'')+(isToday?' today':'')+'" title="'+dds+'">';
+    h += DNAMES_SH[dd.getDay()];
+    h += '</div>';
+  }
+  h += '</div></div>';
+
+  h += '</div>';
+  return h;
+}
+
 // ── INIT ─────────────────────────────────────────────────────────
 (function(){
   var today=new Date();today.setHours(0,0,0,0);
@@ -1440,6 +1783,7 @@ document.getElementById('btn-today').addEventListener('click',function(){
   }
   curFoodDay=today.getDay();
   render();
+  if(CFG.hevyKey){loadHevyData();}
 }());
 
 </script>
